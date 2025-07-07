@@ -29,7 +29,7 @@ const Hero = () => {
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
           {/* Profile Photo */}
-          <div className="mb-8 flex justify-center">
+          <div className="mb-4 flex justify-center">
             <div className="relative group">
               <div className="absolute -inset-2 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient"></div>
               <div className="relative">
@@ -44,7 +44,7 @@ const Hero = () => {
           </div>
 
           {/* Floating icon */}
-          <div className="mb-8 flex justify-center">
+          <div className="mb-6 flex justify-center">
             <div className="relative">
               <Sparkles className="h-12 w-12 text-purple-400 animate-float" />
               <div className="absolute inset-0 h-12 w-12 text-purple-400 animate-ping opacity-20">
