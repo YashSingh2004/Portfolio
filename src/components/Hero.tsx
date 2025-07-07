@@ -33,8 +33,8 @@ const Hero = () => {
               <div className="absolute -inset-2 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient"></div>
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=300&fit=crop&crop=face"
-                  alt="Alex Johnson - Portfolio"
+                  src="C:/Users/yash7/Desktop/Portfolio/Portfolio/src/components/Github.png"
+                  alt="Yash Singh - Portfolio"
                   className="w-60 h-60 rounded-full object-cover border-4 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-500/20 to-pink-500/20 group-hover:from-purple-500/30 group-hover:to-pink-500/30 transition-all duration-300"></div>
@@ -55,16 +55,16 @@ const Hero = () => {
           <h1 className="text-6xl sm:text-7xl lg:text-9xl font-bold text-white mb-8 leading-tight">
             Hi, I'm{' '}
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-gradient">
-              Alex Johnson
+              Yash Singh
             </span>
           </h1>
           
           <div className="space-y-4 mb-12">
             <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              A passionate full-stack developer crafting beautiful digital experiences 
+              A passionate IoT developer and an proficient software engineer 
             </p>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              with modern technologies and creative solutions.
+              crafting beautiful digital experiences with modern technologies and creative solutions.
             </p>
           </div>
 
@@ -79,21 +79,9 @@ const Hero = () => {
             
             <div className="flex space-x-4">
               {[
-                { 
-                  icon: Github, 
-                  href: "https://github.com/yourusername", // 👈 Replace with your GitHub URL
-                  label: "GitHub" 
-                },
-                { 
-                  icon: Linkedin, 
-                  href: "https://linkedin.com/in/yourusername", // 👈 Replace with your LinkedIn URL
-                  label: "LinkedIn" 
-                },
-                { 
-                  icon: Mail, 
-                  href: "mailto:your.email@example.com", // 👈 Replace with your email
-                  label: "Email" 
-                }
+                { icon: Github, href: "https://github.com/Yash6012", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/yash-singh-217b37251/", label: "LinkedIn" },
+                { icon: Mail, href: "yash7singh3@gmail.com", label: "Email" }
               ].map(({ icon: Icon, href, label }, index) => (
                 <a
                   key={label}
