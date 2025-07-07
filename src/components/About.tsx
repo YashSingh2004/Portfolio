@@ -1,19 +1,19 @@
 
 import React from 'react';
-import { Code, Palette, Zap, Award, Users, Coffee } from 'lucide-react';
+import { Code, Palette, Zap, Award, Users, Coffee, Cloud } from 'lucide-react';
 
 const About = () => {
   const skills = [
     {
       icon: <Code className="h-8 w-8" />,
-      title: "Full-Stack Development",
-      description: "Building robust applications with React, Node.js, and modern frameworks",
+      title: "IoT & Embedded Systems",
+      description: "Developing intelligent solutions and optimizing embedded systems for real-world applications.",
       gradient: "from-blue-400 to-cyan-400"
     },
     {
-      icon: <Palette className="h-8 w-8" />,
-      title: "UI/UX Design", 
-      description: "Creating intuitive and beautiful user interfaces with attention to detail",
+      icon: <Cloud className="h-8 w-8" />,
+      title: "Cloud Services", 
+      description: "Leveraging cloud platforms and services for scalable application deployment and management",
       gradient: "from-purple-400 to-pink-400"
     },
     {
@@ -25,9 +25,9 @@ const About = () => {
   ];
 
   const stats = [
-    { icon: Award, value: "50+", label: "Projects Completed" },
-    { icon: Users, value: "30+", label: "Happy Clients" },
-    { icon: Coffee, value: "1000+", label: "Cups of Coffee" },
+    { icon: Award, value: "10+", label: "Projects Completed" },
+    { icon: Zap, value: "15+", label: "Technologies Explored" },
+    { icon: Users, value: "5+", label: "Team Collaborations" },
   ];
 
   return (
@@ -54,8 +54,8 @@ const About = () => {
           </h2>
           
           <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
-            I'm a dedicated developer with over 5 years of experience creating digital solutions 
-            that make a difference. I love turning complex problems into simple, beautiful designs.
+            I'm a dedicated developer with a passion for creating digital solutions that make a difference.
+            <p>I love turning complex problems into simple, beautiful designs.</p>
           </p>
 
           {/* Stats section */}
