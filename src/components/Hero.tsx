@@ -79,20 +79,39 @@ const Hero = () => {
             
             <div className="flex space-x-4">
               {[
-                { icon: Github, href: "#", label: "GitHub" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Mail, href: "#", label: "Email" }
+                { 
+                  icon: Github, 
+                  href: "https://github.com/yourusername", // 👈 Replace with your GitHub URL
+                  label: "GitHub" 
+                },
+                { 
+                  icon: Linkedin, 
+                  href: "https://linkedin.com/in/yourusername", // 👈 Replace with your LinkedIn URL
+                  label: "LinkedIn" 
+                },
+                { 
+                  icon: Mail, 
+                  href: "mailto:your.email@example.com", // 👈 Replace with your email
+                  label: "Email" 
+                }
               ].map(({ icon: Icon, href, label }, index) => (
-                <Button
+                <a
                   key={label}
-                  variant="outline"
-                  size="icon"
-                  className="group glass-light border-gray-600/50 text-gray-300 hover:text-white hover:border-purple-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/20"
-                  style={{ animationDelay: `${index * 100}ms` }}
+                  href={href}
+                  target={label !== "Email" ? "_blank" : undefined}
+                  rel={label !== "Email" ? "noopener noreferrer" : undefined}
+                  className="inline-block"
                 >
-                  <Icon className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
-                  <span className="sr-only">{label}</span>
-                </Button>
+                  <Button
+                    variant="outline"
+                    size="icon"
+                    className="group glass-light border-gray-600/50 text-gray-300 hover:text-white hover:border-purple-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/20"
+                    style={{ animationDelay: `${index * 100}ms` }}
+                  >
+                    <Icon className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
+                    <span className="sr-only">{label}</span>
+                  </Button>
+                </a>
               ))}
             </div>
           </div>
