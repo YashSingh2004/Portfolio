@@ -17,22 +17,22 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email",
-      value: "alex.johnson@email.com",
-      href: "mailto:alex.johnson@email.com",
+      value: "yash7singh3@gmail.com",
+      href: "mailto:yash7singh3@gmail.com",
       gradient: "from-blue-400 to-cyan-400"
     },
     {
       icon: <Phone className="h-6 w-6" />,
       label: "Phone", 
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 7905749912",
+      href: "tel:+917905749912",
       gradient: "from-green-400 to-emerald-400"
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       label: "Location",
-      value: "San Francisco, CA",
-      href: "#",
+      value: "Prayagraj, UP",
+      href: "https://maps.app.goo.gl/K1AJXDPaGAaPBYJCA",
       gradient: "from-purple-400 to-pink-400"
     }
   ];
@@ -132,8 +132,8 @@ const Contact = () => {
                     <div className="absolute inset-0 w-3 h-3 bg-green-400 rounded-full animate-ping opacity-20"></div>
                   </div>
                   <div>
-                    <p className="text-green-400 font-medium">Available for new projects</p>
-                    <p className="text-gray-400 text-sm">Usually responds within 24 hours</p>
+                    <p className="text-green-400 font-medium">Open to collaborations and challenges</p>
+                    <p className="text-gray-400 text-sm">Ready to dive into impactful projects</p>
                   </div>
                 </div>
               </div>
@@ -216,7 +216,7 @@ const Contact = () => {
                     <CheckCircle className="h-8 w-8 text-green-400" />
                   </div>
                   <h3 className="text-2xl font-semibold text-white mb-2">Message Sent!</h3>
-                  <p className="text-gray-300">Thanks for reaching out. I'll get back to you soon!</p>
+                  <p className="text-gray-300">Thanks for connecting! I'll be in touch soon.</p>
                 </div>
               )}
             </CardContent>
@@ -227,14 +227,14 @@ const Contact = () => {
         <div className="text-center mt-20 pt-12 border-t border-slate-700/50">
           <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
             <p className="text-gray-400 flex items-center space-x-2">
-              <span>© 2024 Alex Johnson.</span>
+              <span>© 2025 Yash Singh.</span>
               <span className="hidden sm:inline">Built with React and Tailwind CSS.</span>
             </p>
             
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2 text-gray-400">
                 <Clock className="h-4 w-4" />
-                <span className="text-sm">Last updated: Dec 2024</span>
+                <span className="text-sm">Last updated: Jul 2025</span>
               </div>
             </div>
           </div>
