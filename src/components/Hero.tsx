@@ -1,5 +1,6 @@
+
 import React, { useEffect, useState } from 'react';
-import { ArrowDown, Github, Linkedin, Mail, Sparkles } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Sparkles, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -27,16 +28,14 @@ const Hero = () => {
 
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`}>
-          {/* Profile Photo */}
+          {/* Profile Photo Placeholder */}
           <div className="mb-4 flex justify-center">
             <div className="relative group">
               <div className="absolute -inset-2 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient"></div>
               <div className="relative">
-                <img 
-                  src="https://raw.githubusercontent.com/YashSingh2004/Portfolio/main/src/components/Github-min.png"
-                  alt="Yash Singh - Portfolio"
-                  className="w-60 h-60 rounded-full object-cover border-4 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-300"
-                />
+                <div className="w-60 h-60 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center border-4 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-300">
+                  <User className="w-24 h-24 text-white" />
+                </div>
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-purple-500/20 to-pink-500/20 group-hover:from-purple-500/30 group-hover:to-pink-500/30 transition-all duration-300"></div>
               </div>
             </div>
@@ -61,7 +60,7 @@ const Hero = () => {
           
           <div className="space-y-4 mb-12">
             <p className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              A passionate IoT developer and an proficient software engineer 
+              A passionate IoT developer and an proficient software engineer 
             </p>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
               crafting beautiful digital experiences with modern technologies and creative solutions.
@@ -81,7 +80,7 @@ const Hero = () => {
               {[
                 { icon: Github, href: "https://github.com/Yash6012", label: "GitHub" },
                 { icon: Linkedin, href: "https://www.linkedin.com/in/yash-singh-217b37251/", label: "LinkedIn" },
-                { icon: Mail, href: "yash7singh3@gmail.com", label: "Email" }
+                { icon: Mail, href: "mailto:yash7singh3@gmail.com", label: "Email" }
               ].map(({ icon: Icon, href, label }, index) => (
                 <a
                   key={label}
