@@ -33,7 +33,7 @@ const Hero = () => {
               <div className="absolute -inset-2 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient"></div>
               <div className="relative">
                 <img 
-                  src="C:/Users/yash7/Desktop/Portfolio/Portfolio/src/components/Github.png"
+                  src="https://raw.githubusercontent.com/YashSingh2004/Portfolio/main/src/components/Github-min.png"
                   alt="Yash Singh - Portfolio"
                   className="w-60 h-60 rounded-full object-cover border-4 border-white/20 shadow-2xl group-hover:scale-105 transition-transform duration-300"
                 />
